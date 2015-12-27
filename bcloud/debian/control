@@ -1,0 +1,27 @@
+Source: bcloud
+Section: gnome
+Priority: optional
+Maintainer: LiuLang <gsushzhsosgsu@gmail.com>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.6
+Homepage: https://github.com/LiuLang/bcloud
+
+Package: bcloud
+Architecture: all
+Depends: ${misc:Depends},
+		 gir1.2-gnomekeyring-1.0 | python3-pykde4,
+         gir1.2-gtk-3.0,
+         gir1.2-notify-0.7,
+         gnome-icon-theme-symbolic,
+         libgtk-3-0,
+         libnotify4,
+         notification-daemon,
+         python3-crypto,
+         python3-dbus,
+         python3-gi,
+		 python3-pyinotify,
+         python3-keyring,
+         python3-lxml
+Description: Baidu Pan client for linux users
+ Alternative client of Baidu Pan (Baidu Personal Cloud) for linux desktop 
+ users.

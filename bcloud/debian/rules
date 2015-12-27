@@ -1,0 +1,11 @@
+#!/usr/bin/make -f
+
+PKGNAME=bcloud
+
+%:
+	dh $@ --with python3 --buildsystem=pybuild
+
+override_dh_auto_install:
+	install -m 0755 $(CURDIR)/bcloud-gui $(CURDIR)/debian/$(PKGNAME)/usr/bin/
+	cp -rvf $(CURDIR)/bcloud $(CURDIR)/debian/$(PKGNAME)/usr/lib/python3/dist-packages/
+	cp -rvf $(CURDIR)/share $(CURDIR)/debian/$(PKGNAME)/usr/share
