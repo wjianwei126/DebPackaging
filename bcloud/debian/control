@@ -2,13 +2,13 @@ Source: bcloud
 Section: gnome
 Priority: optional
 Maintainer: LiuLang <gsushzhsosgsu@gmail.com>
-Build-Depends: debhelper (>= 9)
+Build-Depends: debhelper (>= 9), python3
 Standards-Version: 3.9.6
 Homepage: https://github.com/LiuLang/bcloud
 
 Package: bcloud
 Architecture: all
-Depends: ${misc:Depends},
+Depends: ${misc:Depends}, ${python3:Depends},
 		 gir1.2-gnomekeyring-1.0 | python3-pykde4,
          gir1.2-gtk-3.0,
          gir1.2-notify-0.7,
