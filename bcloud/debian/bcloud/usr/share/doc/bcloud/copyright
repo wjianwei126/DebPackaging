@@ -1,7 +1,0 @@
-Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: bcloud
-Source: https://github.com/LiuLang/bcloud
-
-Files: *
-Copyright: 2013-2014 LiuLang <gsushzhsosgsu@gmail.com>
-License: GPLv3
